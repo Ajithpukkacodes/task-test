@@ -9,15 +9,15 @@ require 'faker'
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 
-# 10.times do |i|
-#   User.create!(
-#     email: Faker::Internet.email,
-#     first_name: Faker::Name.first_name,
-#     password: 'password',
-#     second_name: Faker::Name.last_name,
-#     latitude: Faker::Address.latitude,
-#     longitude: Faker::Address.longitude,
-#   )
+10.times do |i|
+  User.create!(
+    email: Faker::Internet.email,
+    first_name: Faker::Name.first_name,
+    password: 'password',
+    second_name: Faker::Name.last_name,
+    latitude: Faker::Address.latitude,
+    longitude: Faker::Address.longitude,
+  )
 
 #   puts "*** created user #{i}"
 # end

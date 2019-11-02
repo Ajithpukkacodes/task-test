@@ -5,7 +5,13 @@
 	welcome to test app
   </h1>
   <%-if current_user%>
+   <h6>
     <%= link_to "logout", destroy_user_session_path(current_user), method: :delete%>
+   </h6>
+  <%else%>
+  <h6>
+    <%= link_to "login", new_user_session_path%>
+  </h6>
   <%end%>
 </body>
 </html>
