@@ -1,0 +1,11 @@
+<html>
+<head><title>test app</title></head>
+<body>
+  <h1>hello, 
+	welcome to test app
+  </h1>
+  <%-if current_user%>
+    <%= link_to "logout", destroy_user_session_path(current_user), method: :delete%>
+  <%end%>
+</body>
+</html>
