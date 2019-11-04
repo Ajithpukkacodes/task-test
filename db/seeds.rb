@@ -20,4 +20,4 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
   )
 
 #   puts "*** created user #{i}"
-# end
+end
